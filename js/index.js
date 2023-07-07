@@ -38,3 +38,16 @@
 // console.log(isAge && isClose && !isMarried);
 // console.log(2 + 2 * 2 === 8);
 // console.log(2 + 2 * 2 != 8);
+const age = +prompt("How old are you", "");
+// if (age>18){
+//     console.log("Welcome");
+// } else{
+//     console.log("No entry");
+// }
+if (age>25){
+    console.log("Horror Films");
+} else if(age>18 && age<25){
+    console.log("boevik Films");
+}else {
+    console.log("Cartoons");
+}
