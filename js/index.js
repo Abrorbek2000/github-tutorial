@@ -38,7 +38,7 @@
 // console.log(isAge && isClose && !isMarried);
 // console.log(2 + 2 * 2 === 8);
 // console.log(2 + 2 * 2 != 8);
-const age = +prompt("How old are you", "");
+// const age = +prompt("How old are you", "");
 // if (age>18){
 //     console.log("Welcome");
 // } else{
@@ -51,4 +51,19 @@ const age = +prompt("How old are you", "");
 // }else {
 //     console.log("Cartoons");
 // }
-age>25 ? console.log("Horror films") :console.log("boevik films");
+// age>25 ? console.log("Horror films") :console.log("boevik films");
+const colors = prompt("What is your favourite color", "");
+switch (color) {
+  case "red":
+    console.log("Stop");
+    break;
+  case "yellow":
+    console.log("Slowly");
+    break;
+  case "green":
+    console.log("Go");
+    break;
+  default:
+    console.log("Traffic jam");
+    break;
+}
