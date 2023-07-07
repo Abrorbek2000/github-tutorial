@@ -44,10 +44,11 @@ const age = +prompt("How old are you", "");
 // } else{
 //     console.log("No entry");
 // }
-if (age>25){
-    console.log("Horror Films");
-} else if(age>18 && age<25){
-    console.log("boevik Films");
-}else {
-    console.log("Cartoons");
-}
+// if (age>25){
+//     console.log("Horror Films");
+// } else if(age>18 && age<25){
+//     console.log("boevik Films");
+// }else {
+//     console.log("Cartoons");
+// }
+age>25 ? console.log("Horror films") :console.log("boevik films");
