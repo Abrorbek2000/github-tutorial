@@ -52,18 +52,25 @@
 //     console.log("Cartoons");
 // }
 // age>25 ? console.log("Horror films") :console.log("boevik films");
-const colors = prompt("What is your favourite color", "");
-switch (color) {
-  case "red":
-    console.log("Stop");
-    break;
-  case "yellow":
-    console.log("Slowly");
-    break;
-  case "green":
-    console.log("Go");
-    break;
-  default:
-    console.log("Traffic jam");
-    break;
+// const colors = prompt("What is your favourite color", "");
+// switch (colors) {
+//   case "red":
+//     console.log("Stop");
+//     break;
+//   case "yellow":
+//     console.log("Slowly");
+//     break;
+//   case "green":
+//     console.log("Go");
+//     break;
+//   default:
+//     console.log("Traffic jam");
+//     break;
+// }
+
+// Sikllar
+const startNum = 1;
+while(startNum<100){
+    console.log(startNum);
+    startNum++;
 }
