@@ -69,8 +69,166 @@
 // }
 
 // Sikllar
-const startNum = 1;
-while(startNum<100){
-    console.log(startNum);
-    startNum++;
+
+// // first
+// let startNum = 1;
+// // while(startNum<100){
+// //     console.log(startNum);
+// //     startNum++;
+// // }
+
+// // second
+// do{
+//     console.log(startNum);
+//     startNum++;
+// }while(startNum<100);
+
+// third
+// for (let i=2; i<100; i++) {
+//     console.log(i);
+// }
+// const num = 1;
+// for (let i = 1; i< 10; i++) {
+//   console.log(num);
+//   num++;
+// }
+// for (let i = 1; i < 10; i++) {
+//   if (i === 8) {
+//     break;
+//   }
+//   console.log(i);
+// }
+// for (let i = 1; i < 10; i++) {
+//   if (i === 8) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// Functions
+// function sayHello() {
+//   console.log("HEllo World");
+// }
+// sayHello();
+// function sayHello(text) {
+//   console.log(text);
+// }
+// sayHello("Hello World");
+// function calc(a,b){
+//     console.log(a+b);
+//     console.log(a*b);
+// }
+// calc(5,10);
+// calc(5,7);
+// function clientName(name,surname){
+//     console.log(`My name is ${name} and surname is ${surname}`);
+// }
+// clientName("Abrorbek","Mayunusov");
+// function gf(a,b){
+//     return a+b;
+// }
+// console.log(gf(5,6));
+// function calc(a,b){ //Function declaration
+//     return a+b;
+// }
+// const sumOfAvaB = calc(5,6); //Function expression
+// console.log(sumOfAvaB);
+// const calc =(a,b)=>a+b; //Arrow function
+// console.log(calc(5,10));
+
+// Metodhs
+const user = "samar";
+// console.log(user.length);
+// const arr = [1, 2, 3];
+// console.log(arr.length)
+// console.log(user[1]);
+// console.log(user.toUpperCase());
+// console.log(user.toLowerCase());
+// console.log(user.indexOf("m"));
+// console.log(user.slice(1,3));
+// console.log(user.slice(0));
+// console.log(user.substring(0));
+// const num = 5.5;
+// console.log(Math.round(num));
+// const borderAge = "13.8px";
+// console.log(parseInt(borderAge));
+// console.log(parseFloat(borderAge));
+
+// Callback
+// function edu(subject,callback){
+//     console.log(`I wanna teach ${subject}`);
+//     callback();
+// }function done(){
+//     console.log(`That is great`);
+// }
+// edu("Javascript",done);
+// function edu(subject,callback){
+//     console.log(`I wanna teach ${subject}`);
+//     callback();
+// }
+// edu("Javascript",function done(){
+//     console.log("That is great");
+// });
+
+// Object
+const thief = {
+  jacket: "black",
+  height: 1.8,
+  colors: {
+    hair: "green",
+    style: "curvey",
+  },
+//   howout: function(){
+//     console.log(`Fast through doors`);
+// },
+};
+// thief.howout();
+// console.log(thief.height);
+// deleat thief.jacket; objectni elementini o'chirish
+// console.log(Object.keys(thief).length);
+// for (let key in thief) {
+//   if (typeof thief[key] === "object") {
+//     for (let i in thief[key]) {
+//       console.log(`Property ${i} has value ${thief[key][i]}`);
+//     }
+//   }else{
+//     console.log(`Property ${key} has value ${thief[key]}`);
+//   }
+// }
+// const hair = thief.colors.hair;
+// const style = thief.colors.style;
+// console.log(hair);
+// console.log(style);
+// const {hair,style} = thief.colors;
+// console.log(hair);
+// console.log(style);
+
+// Massivlar
+// const arr = [1, 2, 3, 4, 5, 6];
+// arr.pop();
+// arr.push(7);
+// arr.shift();
+// arr.unshift(0);
+// console.log(arr);
+// for(let i=0; i<arr.length; i++){
+//   console.log(arr[i]);
+// }
+// for(let value of arr){
+//   console.log(value);
+// }
+// arr.forEach(function(item, index, arr){  //callback qaytaradi 
+//   console.log(`${item}: ${index} in ${arr}`);
+// })
+// const movie = prompt("What is your favourite movies", "");
+// const userMovies = movie.split(", ");
+// userMovies.sort();
+// console.log(userMovies);
+// const movie = prompt("What is your favourite movies", "");
+// const userMovies = movie.split(", ");
+// console.log(userMovies.join('- '));
+const arr = [1 ,88, 66, 45, 12, 77];
+arr.sort(arrFunction());
+console.log(arr);
+function arrFunction(a,b){
+  return a-b;
 }
